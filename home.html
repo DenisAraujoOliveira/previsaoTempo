@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Previsão do Tempo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="previsao">		
+			<h1>Previsão do tempo</h1>
+			<div class="mostra-tempo">
+				<div class="hoje">
+					<div class="resumo-fechar">
+						<p class="resumo"></p>
+						<p class="fechar">X</p>
+					</div>
+					<h2 class="temp"></h2>
+					<div class="detalhes">
+						<div class="max-min">
+							<p class="seta minimo"></p>
+							<p class="seta maximo"></p>
+						</div>
+						<p class="sensacao">Sensação</p>
+						<p class="vento">Vento</p>
+						<p class="umidade">Umidade</p>
+					</div>
+				</div>
+				<div class="prox-dias">
+					<table>
+						<tr>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<input id="cidade" class="icone-pesquisar" type="text" name="cidades" placeholder="Insira o nome da cidade" />
+			
+		</div>
+		<div class="temperatura">
+			<div class="tabelas">
+			<h1>Capitais</h1>
+			<table>
+				<tr>
+					<th>Min</th>
+					<th>Max</th>
+					<th> </th>
+				</tr>
+				<tr class="linha-cidades">
+					<td class="min"></td>
+					<td class="max"></td>
+					<td class="cidade">Rio de Janeiro</td>
+				</tr>
+				<tr class="linha-cidades">
+					<td class="min"></td>
+					<td class="max"></td>
+					<td class="cidade">São Paulo</td>
+				</tr>
+				<tr class="linha-cidades">
+					<td class="min"></td>
+					<td class="max"></td>
+					<td class="cidade">Belo Horizonte</td>
+				</tr>
+				<tr class="linha-cidades">
+					<td class="min"></td>
+					<td class="max"></td>
+					<td class="cidade">Brasília</td>
+				</tr>
+				<tr class="linha-cidades">
+					<td class="min"></td>
+					<td class="max"></td>
+					<td class="cidade">Belém</td>
+				</tr>
+			</table>
+			<table class="tbl2">
+				<tr class="linha-2">
+					<th class="linha-2">Min</th>
+					<th class="linha-2">Max</th>
+					<th class="linha-2"> </th>
+				</tr>
+				<tr class="linha-cidades">
+					<td class="min"></td>
+					<td class="max"></td>
+					<td class="cidade">Salvador</td>
+				</tr>
+				<tr class="linha-cidades">
+					<td class="min"></td>
+					<td class="max"></td>
+					<td class="cidade">Curitiba</td>
+				</tr>
+				<tr class="linha-cidades">
+					<td class="min"></td>
+					<td class="max"></td>
+					<td class="cidade">Fortaleza</td>
+				</tr>
+				<tr class="linha-cidades">
+					<td class="min"></td>
+					<td class="max"></td>
+					<td class="cidade">Manaus</td>
+				</tr>
+				<tr class="linha-cidades">
+					<td class="min"></td>
+					<td class="max"></td>
+					<td class="cidade">João Pessoa</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+	</div>
+	<footer>
+			By Denilson Araújo
+			<a href="https://github.com/DenisAraujoOliveira"><i class="contatos github"></i></a>
+			<a href="mailto:denilsonaraujo95@hotmail.com"><i class="contatos email"></i></a>
+	</footer>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/script.js"></script>
+</html>
