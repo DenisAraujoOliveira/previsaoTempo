@@ -11,8 +11,10 @@ html{
 body{
     height: 98%;
     background-size: cover;
-    background-image: url('http://www.mochileiros.com/upload/galeria/fotos/20120229200237.JPG');
+    background-image: url(http://www.mochileiros.com/upload/galeria/fotos/20120229200237.JPG);
     background-repeat: no-repeat;
+    background-color: RGBA(218, 231, 247,0.3 );
+    background-position-y: 70px;
 }
 .temperatura table{
 	float: left;
@@ -48,6 +50,7 @@ h1{
     margin: auto;
     text-align: center;
     position: relative;
+    min-height: 100%;
 }
 
 .previsao>#cidade{
@@ -221,7 +224,6 @@ box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.33);
 
 footer{
     position: absolute;
-    bottom: 0px;
     width: 100%;
     background-color: rgba(153,153,153,0.8);
     left: 0;
@@ -251,11 +253,23 @@ footer{
 }
 
 
-@media(max-width: 746px){
+
+@media(max-width: 849px){
     .mostra-tempo th:nth-child(5), .mostra-tempo td:nth-child(5) {
         display: none;
     }   
 }
+
+@media(max-width: 755px){
+    body{
+        background-position-y: 440px;
+    }
+    footer{
+        position: initial;
+    }
+}
+
+
 
 @media (max-width: 600px) {
     h1{
@@ -323,8 +337,5 @@ footer{
     }
     .temperatura .tbl2{
         margin-top: -9px;
-    }
-    footer {
-        position: initial;
     }
 }
